@@ -1,0 +1,35 @@
+Q.2 Write a Program to print the factorial of number N using for loop.
+For example,
+Input:
+Enter any number: 5
+
+Output:
+The factorial is: 120
+
+#include <stdio.h>
+
+int main() {
+    int num, i;
+    unsigned long long fact = 1;
+
+    printf("Enter any number: ");
+    scanf("%d", &num);
+
+    if (num < 0)
+        printf("Error! Factorial of a negative number doesn't exist.");
+    else {
+        for (i = 1; i <= num; i++) {
+            fact *= i;
+        }
+        printf("The factorial is: %llu", fact);
+    }
+
+    return 0;
+}
+
+O/p:-
+/tmp/4zVNjCCwlO.o
+Enter any number: 5
+The factorial is: 120
+
+=== Code Execution Successful ===
